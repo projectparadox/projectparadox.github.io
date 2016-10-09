@@ -3,10 +3,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
       function randomize() {
-                        console.log("hi")
-                        var img = document.getElementById("p")
-                        // img.innerHTML = Date()
-                        img.style.visibility = 'hidden'
+                        // console.log("hi")
+                        // var bool = Math.floor((Math.random()*2)+1)
+                        // console.log(bool)
+                        // var num = 1
+                        // var img = document.getElementById(""+num+"")
+
+                        // // img.innerHTML = Date()
+                        // img.style.visibility = 'hidden'
+                        for (i = 1; i<8;i++){
+                          var bool = Math.floor((Math.random()*2)+1)
+                          if (bool==1){
+                            var img = document.getElementById(""+i+"")
+                            img.style.visibility = 'hidden'
+                          }
+                          else{
+                            var img = document.getElementById(""+i+"")
+                            img.style.visibility = 'visible'
+                          }
+                          
+                        }
                      }
     </script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -26,7 +42,7 @@
                       <div class="row text-center">
                         <div class="col-md-2" style="width:250;height:48px;"></div>
                         <div class="col-md-1" style="width:100;height:124.9">
-                          <a href="javascript:randomize()" id="p"><img src="img/p-01.png" style="width:100;height:124.9"></a>
+                          <a href="javascript:randomize()" id="1"><img src="img/p-01.png" style="width:100;height:124.9"></a>
                         </div>
                         <div class="col-md-1" style="width:100;height:124.9">
                           <a href="#" id="2"><img src="img/a-01.png" style="width:100;height:124.9"></a>
@@ -37,13 +53,13 @@
                         <div class="col-md-1" style="width:100;height:124.9">
                           <a href="#" id="4"><img src="img/a-01.png" style="width:100;height:124.9"></a>
                         </div>
-                        <div class="col-md-1"style="width:100;height:124.9">
+                        <div class="col-md-1" style="width:100;height:124.9">
                           <a href="#" id="5"><img src="img/d-01.png" style="width:100;height:124.9"></a>
                         </div>
-                        <div class="col-md-1"style="width:100;height:124.9">
+                        <div class="col-md-1" style="width:100;height:124.9">
                           <a href="#" id="6"><img src="img/o-01.png" style="width:100;height:124.9"></a>
                         </div>
-                        <div class="col-md-1"style="width:100;height:124.9">
+                        <div class="col-md-1" style="width:100;height:124.9">
                           <a href="#" id="7"><img src="img/x-01.png" style="width:100;height:124.9"></a>
                         </div>
                         <div class="col-md-1" style="width:50;height:1;">
@@ -70,7 +86,7 @@
             <div class="outer">
               <div class="middle">
                 <div class="innerButton">
-                  <a class="btn btn-danger" style="width:150;height:50"></a>
+                  <a class="btn btn-danger" style="width:150;height:50" href="javascript:randomize()"></a>
                 </div>
               </div>
             </div>
