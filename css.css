@@ -295,6 +295,12 @@ th {
     margin-right: auto; 
     width: /*whatever width you want*/;
 }
+.innerButton{
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 200;
+    width: /*whatever width you want*/;
+}
 .Absolute-Center {
   margin: auto;
   position: absolute;
